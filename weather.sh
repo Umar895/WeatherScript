@@ -8,7 +8,7 @@ usage() {
     echo "Options:"
     echo "      -h   Show help"
     echo "      -l   The location to display weather for"
-    echo "      -t   Time interval to fetch updates (minutes)"
+    echo "      -t   Time interval to fetch updates"
     echo ""
 
     exit 1
@@ -43,5 +43,5 @@ do
     else
         curl wttr.in/"$location?0"
     fi
-    sleep "$time_interval"m
+    sleep "$time_interval"
 done
